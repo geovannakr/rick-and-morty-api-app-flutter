@@ -53,10 +53,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   child: ListTile(  
                      onTap: () {
+                      print("Clicou no personagem: ${character}");
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => CharacterDetailsScreen(character: character),
+                          builder: (context) => CharacterDetailsScreen(character),
                         ),
                       );
                     },  
